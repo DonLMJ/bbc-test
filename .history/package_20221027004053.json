@@ -1,0 +1,21 @@
+{
+  "name": "e2e",
+  "version": "0.0.1",
+  "description": "BBC Challenge Acceptance Tests",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "author": "Donald Lamaj",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^11.5.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "cypress": "^10.11.0",
+    "webpack": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}

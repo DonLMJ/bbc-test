@@ -8,7 +8,7 @@ export const commentSignInPrompt = 'p.comments__signin--prompt'
 class Page {
     clickFirstCommentableNews() {
             cy.get(infoList).each(($el) => {
-                if (cy.wrap($el).find(infoListElement).length === 3) {
+                if (cy.wrap($el).find(infoListElement).length = 3) {
                     cy.get(commentIcon).first().click()
                 }
                 else {
@@ -16,7 +16,7 @@ class Page {
                     
                 }
             })
-
+        //this weekend I see no commentable article to be honest
         //case with no condition
         //cy.get(commentIcon).first().click()
     }

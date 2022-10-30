@@ -6,15 +6,21 @@ export const commentInput = 'form.comments__input'
 export const commentSignInPrompt = 'p.comments__signin--prompt'
 //page object model, here we should find everything needed to intercat with /news
 class Page {
-    //here I would overtake the problem bu loading a page with at least one commentable new or simply stop the test
+    //here I would overtake the problem by loading a page with at least one commentable news or simply looping and stopping properly
     clickFirstCommentableNews() {
-            cy.get(infoList).each(($el) => {
+            cy.get(infoList).each(($el, index) => {
                 if (cy.wrap($el).find(infoListElement).length === 3) {
                     cy.get(commentIcon).first().click()
                     return false
                 }
+                if (index === 20) {
+                    cy.log("Pausing because no commentable article found")
+                    cy.pause()
+                    Cypress.runner.stop()
+                }
                 else {
                     cy.log('No commentable news')
+                    cy.log(index)
                 }
             })
         //this weekend I saw no commentable article to be honest

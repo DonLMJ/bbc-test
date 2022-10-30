@@ -1,7 +1,7 @@
 export const emailElem = '#user-identifier-input'
 export const passwordElem = '#password-input'
 export const submitButton = '#submit-button'
-
+//page object model, here we should find everything needed to intercat with login page
 class Page {
   //ideally speaking I would have created a signInApi as testing the auth is not in the scope of this testing flow
     fillEmail(email) {

@@ -26,6 +26,8 @@
 
 // ****************************************************************
 
+//custom commands which could be needed in different parts of the app
+
 const apiRoutes = Cypress.env('api')
 //here I would have created a signInViaBE in order to create better the state for this test as testing auth is not in the scope of this test
 Cypress.Commands.add('visitSignOut', () => {
@@ -36,7 +38,7 @@ Cypress.Commands.add('visitSignIn', () => {
     cy.visit(`${Cypress.env('urls').accountBaseUrl}${Cypress.env('urls').signIn}`)
 })
 
-//not responsability of e2e to do so but interceptions in points like this make the test bullet proof
+//not responsability of e2e to do so but interceptions in points like this make the test more robust
 //furthermore, this gives better traceability with testing suites in BE
 
 Cypress.Commands.add('waitForApiResponse', apis => {

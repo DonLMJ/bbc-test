@@ -25,7 +25,7 @@ Cypress CLI to run only regression tests
 
 Two automatic tests can be found in news.feature, the ability to comment articles in the most direct flows as users with different permissions is crucial in a regression suite where we need to make sure about user experience for commenting at the highest partitions found(loggged in vs NOT logged in user).
 
-A se of manual tests have been propesed in newsManual.feature keeping in mind all functionalities usually covered at the component level.
+A set of manual tests have been propesed in newsManual.feature keeping in mind all functionalities usually covered at the component level.
 
 
 

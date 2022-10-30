@@ -6,7 +6,7 @@ See the comprehensive [Cypress docs](https://docs.cypress.io/guides/overview/why
 - Ensure Node is installed on your machine. See Node.js is 12 or 14 and above.
     
 ### Install
-Now install dependencies using yarn:
+Install dependencies using npm:
 
     npm install
 

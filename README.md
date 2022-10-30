@@ -1,6 +1,3 @@
-Setup and installing
-
-Prerequisites
 ## What is Cypress?
 See the comprehensive [Cypress docs](https://docs.cypress.io/guides/overview/why-cypress.html#).
 

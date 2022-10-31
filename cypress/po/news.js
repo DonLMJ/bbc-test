@@ -9,11 +9,12 @@ class Page {
     //here I would overtake the problem by loading a page with at least one commentable news or simply looping and stopping properly
     clickFirstCommentableNews() {
             cy.get(infoList).each(($el, index) => {
-                if (cy.wrap($el).find(infoListElement).length === 3) {
+                if (cy.wrap($el).find(infoListElement).length = 3) {
                     cy.get(commentIcon).first().click()
+                    
                     return false
                 }
-                if (index === 20) {
+                if (index === 30) {
                     cy.log("Pausing because no commentable article found")
                     cy.pause()
                     Cypress.runner.stop()

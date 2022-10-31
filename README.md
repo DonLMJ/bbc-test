@@ -1,3 +1,6 @@
+![6yyjbq](https://user-images.githubusercontent.com/79869042/198995759-ab60bbb3-467c-48d7-bfd9-6452e0b88539.gif)
+
+
 ## What is Cypress?
 See the comprehensive [Cypress docs](https://docs.cypress.io/guides/overview/why-cypress.html#).
 
